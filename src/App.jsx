@@ -1,7 +1,7 @@
 
 import './App.css'
 import Footer from './Components/Footer/Footer'
-import AllRoutes from './Components/Routes/Route'
+import { Router } from './Components/Routes/Router'
 
 function App() {
   
@@ -9,7 +9,7 @@ function App() {
   return (
     <div >
       
-      <AllRoutes/>
+     <Router/>
      
     </div>
   )
