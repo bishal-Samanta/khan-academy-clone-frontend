@@ -45,22 +45,25 @@ const Navbar = () => {
                     </span>
                   </span>
                 </button>
-                {/* <div className="dropdown1"></div> */}
+               
                 <div className="dropdown">
                   <ul className="drop-ul">
 
                     <li>
+
                       <div>
+
                         <ul>
                           <li>
-                            <a href="">
-                              <span>MATH - INDIA</span>
+                            <a href="" className="drop-a">
+                              <span className="dropspan">MATH - INDIA</span>
                             </a>
                           </li>
                         </ul>
+
                         <ul>
                         <li>
-                            <a href="">
+                             <a href="">
                               <span>Class 1</span>
                             </a>
                           </li>
@@ -120,7 +123,9 @@ const Navbar = () => {
                             </a>
                           </li>
                         </ul>
+
                       </div>
+
                     </li>
 
                     <li>
