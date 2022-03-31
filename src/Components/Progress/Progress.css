@@ -1,0 +1,76 @@
+.pro-main-container {
+    width: 63%;
+    /* border: 3px solid rgb(248, 10, 10); */
+    margin-left: 30%;
+  }
+
+.P-select {
+  /* border: 0.2px solid black; */
+  border-radius: 2px;
+  width: 200px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.my-progress-container h1 {
+  margin-left: 15px;
+}
+
+.my-progress-container p {
+  margin-left: 15px;
+}
+.SubScript {
+  font-size: 18px;
+  margin-left: 5px;
+  font-weight: normal;
+  cursor: pointer;
+  color: blue;
+}
+.pro-select-div {
+  margin-top: 20px;
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+.my-progress-container > p {
+  margin-top: 10px;
+}
+
+tr {
+  height: 70px;
+  margin-left: 15px;
+}
+
+td {
+  /* border: 2px solid rgb(27, 233, 120); */
+  text-align: left;
+  width: fit-content;
+  margin-left: 12px;
+}
+
+th {
+  font-weight: lighter;
+  font-size: 13px;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.pro-table {
+  margin-left: 15px;
+  /* border: 2px solid greenyellow; */
+  column-gap: 20px;
+}
+
+.pro-table-image {
+  width: 3%;
+  height: 3%;
+}
+
+.pro-arithmatic-scan {
+  margin-left: 3%;
+  text-align: left;
+}
+
+.pro-arithmatic-scann {
+  margin-left: 6%;
+}
