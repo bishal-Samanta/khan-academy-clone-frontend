@@ -207,6 +207,7 @@ padding-right: 20px ;
     line-height: 20px ;
     font-weight: 700 ;
     padding: 0px ;
+    
 }
 
 .nav-search{
@@ -309,8 +310,24 @@ padding-right: 20px ;
     border-radius: 4px ;
     background-color: rgb(240,241,242);
 }
-
+/* .dropdown1{
+        background-image: url(https://cdn.kastatic.org/images/learn-menu/left-background.png), url(https://cdn.kastatic.org/images/learn-menu/right-background.png) !important;
+    background-position: center left, top -62px right 0px !important;
+    background-repeat: no-repeat !important;
+    display: none !important;
+    position: absolute !important;
+    z-index: 1000 !important;
+    background-color: #FAFAFA !important;
+    border-bottom: 1px solid #D6D8DA !important;
+    border-top: 1px solid #D6D8DA !important;
+    left: 0px !important;
+    opacity: 0.99 !important;
+    width: 100% !important;
+} */
 .dropdown{
+    background-image: url(https://cdn.kastatic.org/images/learn-menu/left-background.png), url(https://cdn.kastatic.org/images/learn-menu/right-background.png) !important;
+    background-position: center left, top -62px right 0px !important;
+    background-repeat: no-repeat !important;
     position: absolute !important;
     z-index: 1000 !important;
     display: block !important;
@@ -320,13 +337,10 @@ padding-right: 20px ;
     left: 0px !important;
     opacity: 0.99 !important;
     width: 100% !important;
-    
-
-    background-image: url(https://cdn.kastatic.org/images/learn-menu/left-background.png), url(https://cdn.kastatic.org/images/learn-menu/right-background.png) !important;
-    background-position: center left, top -62px right 0px !important;
-    background-repeat: no-repeat !important;
     visibility: hidden;
+   
 }
+
 .drop-ul{
     -moz-box-sizing: border-box !important;
     box-sizing: border-box !important;

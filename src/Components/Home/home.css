@@ -130,7 +130,7 @@
     -webkit-justify-content: center;*/
 }
 
-.h1{
+.main-h1{
     display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
@@ -175,7 +175,7 @@
     min-width: 0px;
     flex-direction: row;
 
-    /* 
+    
      -moz-box-sizing: border-box;
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
@@ -188,7 +188,7 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-     */
+    
 }
 
 .btns{
