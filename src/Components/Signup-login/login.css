@@ -1,0 +1,45 @@
+
+
+a[href="#"]{
+color:white;
+cursor: pointer;
+}
+svg{
+    width:10%;
+
+}
+.butt{
+    width:33%;
+    height:100%;
+    border: none;
+}
+select{
+    width:33%;
+    height:100%;
+    margin-left: 0.3%;
+font-style: Lato, "Noto Sans", sans-serif;
+
+font-size: 16px;
+
+font-weight: 400;
+
+line-height: 20px;
+
+color: rgba(33, 36, 44, 0.64);
+padding:5px;
+text-align: center;
+}
+.endBlack{
+    text-align: left;
+    font-size: 15px;
+
+font-weight: 600;
+
+line-height: 23px;
+
+ color: rgb(33, 36, 44)
+}
+
+.height{
+    line-height:25px;
+}
