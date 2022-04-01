@@ -12,7 +12,10 @@ const Page3 = () => {
           </div>
         </div>
       </div>
+
+
       <div className="p3main">
+
         <div className="left3">
           <div>
             <h4>
@@ -349,8 +352,67 @@ const Page3 = () => {
             </svg>
           </div>
         </div>
-        <div className="right3"></div>
+
+        <div className="right3">
+
+          <div className="head-right3">
+            <div className="head1">
+               <h3>Counting small numbers</h3>
+            </div>
+          </div>
+
+          <div className="body3">
+
+            <div className="links-right3">
+              <h3>
+                <span className="span3">Learn</span>
+              </h3>
+              <ul>
+                <li>
+                <img
+                  src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQc92wXlHpDlC_LMQLw9D_lQ0SiUaNwNLfX5X96tUKY7yZY4pLk"
+                  className="co-learn"
+                />
+                <a className="cor-paragraph">Counting with small numbers</a>
+                </li>
+                <li>
+                <img
+                  src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQc92wXlHpDlC_LMQLw9D_lQ0SiUaNwNLfX5X96tUKY7yZY4pLk"
+                  className="co-learn"
+                />
+                <a className="cor-paragraph">Counting with small numbers</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="links-right3">
+              {/* <h3>
+                <span className="span3">Practice</span>
+              </h3>
+              <ul>
+                <li>
+                <img
+                  src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQc92wXlHpDlC_LMQLw9D_lQ0SiUaNwNLfX5X96tUKY7yZY4pLk"
+                  className="co-learn"
+                />
+                <a className="cor-paragraph">Counting with small numbers</a>
+                </li>
+                <li>
+                <img
+                  src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQc92wXlHpDlC_LMQLw9D_lQ0SiUaNwNLfX5X96tUKY7yZY4pLk"
+                  className="co-learn"
+                />
+                <a className="cor-paragraph">Counting with small numbers</a>
+                </li>
+              </ul> */}
+            </div>
+
+          </div>
+
+        </div>
       </div>
+
+
     </div>
   );
 };
