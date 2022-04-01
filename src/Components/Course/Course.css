@@ -1,0 +1,159 @@
+.cor-main-container {
+  display: flex;
+  border: 1px solid red;
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.cor-main-container-one {
+  border: 1px solid blue;
+  width: 30%;
+  height: auto;
+}
+.cor-main-container-two {
+  border: 1px solid blue;
+  width: 70%;
+  height: auto;
+}
+.cor-main-container-right {
+  border: 2px solid green;
+  height: auto;
+}
+
+.cor-count-learn {
+  border: 1px solid blue;
+  display: flex;
+  height: auto;
+}
+
+.cor-count-numbers {
+  border: 10px solid yellow;
+  width: 50%;
+  height: auto;
+}
+
+.cor-learn {
+  border: 1px solid pink;
+}
+
+.co-learn {
+  height: 10%;
+  width: 10%;
+}
+.cor-video {
+  display: flex;
+  align-items: center;
+}
+
+.cor-practice {
+  border: 10px solid orange;
+  width: 50%;
+  height: 10%;
+
+}
+
+.cor-up-next {
+  border: 1px solid yellow;
+  width: 100%;
+  height: auto;
+}
+.cor-count-in-order {
+  border: 1px solid red;
+  display: flex;
+  margin-top: 10px;
+  background-color: whitesmoke;
+  height: auto;
+}
+
+.cor-up-next-for-you {
+  border: 1px solid red;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.cor-up-next-for-you-one {
+  border: 1px solid rgb(58, 255, 134);
+  width: 80%;
+  height: auto;
+}
+
+.cor-up-next-for-you-two {
+  border: 1px solid yellowgreen;
+  width: 20%;
+  height: auto;
+}
+
+.cor-up-next-for-you-two svg {
+  margin-top: 60%;
+  margin-left: 40%;
+}
+
+.co-hr-line {
+  background-color: blue;
+  height: 1%;
+}
+.co-start-button {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 2% 9%;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.co-practice-button {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 5px;
+  padding: 2% 5%;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+}
+.co-start-button :hover {
+  border: 2px solid #0000ff;
+  border-radius: 5px;
+}
+.co-practice-button :hover {
+  border: 2px solid #0000ff;
+  border-radius: 5px;
+}
+
+.cor-paragraph {
+  margin-left: 10px;
+  cursor: pointer;
+  
+}
+
+.cor-paragraph:hover{
+  text-decoration: underline;
+  color: blue;
+  
+}
+
+.cors-upnext-count{
+  cursor: pointer;
+}
+
+.cors-upnext-count:hover{
+  text-decoration: underline;
+  color: blue;
+  color: black;
+}
+
+
+.cors-upnext-para {
+  color: blue;
+}
+
+.cors-upnext-count {
+  font-weight: bold;
+}
+
+.cors-blank-div{
+  width: 100%;
+  height:7%;
+}
