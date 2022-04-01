@@ -1,33 +1,22 @@
-// const Navbar = () =>{
-//     return(<>
-//         Navbar
-//     </>)
-// }
 
-// export default Navbar;
-
-import React, { useState } from "react";
 import styles from "./navbar.css";
-
-
-
+import React, { useState } from "react";
 
 const Navbar = () => {
 
+  const [showDiv , setShowDiv] = useState(false);
 
-    const [showDiv , setShowDiv] = useState(false);
-
-    const handelDivVisibility = () =>{
-        if(showDiv === false){
-            document.querySelector(".dropdown").style.visibility = "visible";
-            console.log("I am clicked")
-            setShowDiv(true);
-        }
-        else if(showDiv === true){
-            document.querySelector(".dropdown").style.visibility = "hidden";
-            setShowDiv(false);
-        }
-    }  
+  const handelDivVisibility = () =>{
+      if(showDiv === false){
+          document.querySelector(".dropdown").style.visibility = "visible";
+          console.log("I am clicked")
+          setShowDiv(true);
+      }
+      else if(showDiv === true){
+          document.querySelector(".dropdown").style.visibility = "hidden";
+          setShowDiv(false);
+      }
+  }  
 
 
   return (
@@ -39,7 +28,7 @@ const Navbar = () => {
             <div className="nav-left">
 
               <div className="nav-courses">
-                <button className="courses-btn" onClick={handelDivVisibility} >
+                <button  className="courses-btn" onClick={handelDivVisibility}>
                   <span>
                     Courses
                     <span>
@@ -56,21 +45,25 @@ const Navbar = () => {
                     </span>
                   </span>
                 </button>
+               
                 <div className="dropdown">
                   <ul className="drop-ul">
 
                     <li>
+
                       <div>
+
                         <ul>
                           <li>
-                            <a href="">
-                              <span>MATH - INDIA</span>
+                            <a href="" className="drop-a">
+                              <span className="dropspan">MATH - INDIA</span>
                             </a>
                           </li>
                         </ul>
+
                         <ul>
                         <li>
-                            <a href="">
+                             <a href="">
                               <span>Class 1</span>
                             </a>
                           </li>
@@ -130,7 +123,9 @@ const Navbar = () => {
                             </a>
                           </li>
                         </ul>
+
                       </div>
+
                     </li>
 
                     <li>
@@ -525,6 +520,7 @@ const Navbar = () => {
 
                   </ul>
                 </div>
+                
               </div>
 
               <div className="nav-search">
