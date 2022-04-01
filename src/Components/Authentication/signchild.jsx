@@ -4,7 +4,7 @@ import { Child } from "../styled-componets/body"
 export const SignChild=()=>{
 
     return(
-        <Child bgcolor={"rgb(10,42,102)"} Width={"50%"} Height={"28rem"} color={"white"} weight={"400"}size={"17px"}>
+        <Child bgcolor={"rgb(10,42,102)"} Width={"50%"} Height={"100%"} color={"white"} weight={"400"}size={"17px"}>
         <div style={{
           width:"80%",
           height:"auto",
