@@ -1,0 +1,124 @@
+.page3{
+    flex: 1 
+}
+.p3head{
+    background-color: rgb(10, 42, 102);
+}
+.p3div{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1200px !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    padding-bottom: 24px !important;
+    padding-top: 34px !important;
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    width: 100% !important;
+    padding-bottom: 32px !important;
+}
+.p3div1{
+    flex-grow: 1 !important;
+    max-width: 720px !important;
+    
+    text-align: left;
+}
+
+.p3h1{
+    font-weight: 900 !important;
+    font-size: 32px !important;
+    line-height: 44px !important;
+    margin: 0px !important;
+    color: #FFFFFF !important;
+   
+}
+.p3span{
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-family: Lato, "Noto Sans", sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    display: -webkit-inline-box !important;
+    display: -moz-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: -webkit-inline-flex !important;
+    display: inline-flex !important;
+    vertical-align: middle !important;
+    -webkit-align-items: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    outline: none !important;
+    color: rgba(255,255,255,0.64) !important;
+}
+.p3main{
+   
+    display: flex;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.left3{
+   
+    width: 25%;
+    height: 400px;
+    text-align: left;
+    overflow-y: scroll;
+    
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+
+.right3{
+   
+    width: 70%;
+    height: 400px;
+}
+
+
+.left3>div>h4{
+    font-family: Lato, "Noto Sans", sans-serif;
+    size: 40px;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgb(68,68,68);
+}
+
+.left3>div>h4{
+    font-family: Lato, "Noto Sans", sans-serif;
+    size: 40px;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgb(68,68,68);
+}
+
+.left3>div{
+    border-bottom: 1px solid rgb(167, 159, 159);
+}
