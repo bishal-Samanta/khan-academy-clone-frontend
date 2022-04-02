@@ -1,8 +1,26 @@
+import { useEffect, useState } from "react";
 import { Left } from "../left/Left";
 import "./course.css";
 
 
 export const Courses = () => {
+
+    const [logindata, setLoginData] = useState({});
+    
+    useEffect(()=>{
+        getData();
+        console.log(logindata)
+    }, [])
+
+    const getData = () =>{
+        let data = JSON.parse(localStorage.getItem("userdata"));
+        setLoginData(data.user);
+        console.log(data.user.userName)
+    } 
+    
+    
+
+
   return (
     <>
       <div className="loginnameDisplay">
@@ -14,7 +32,7 @@ export const Courses = () => {
             />
           </div>
           <div className="login_name">
-            <h4 id="lgn_name">#####</h4>
+            <h4 id="lgn_name">{logindata.userName}</h4>
           </div>
         </div>
       </div>
@@ -66,7 +84,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault1"
+                                htmlFor="flexRadioDefault1"
                               >
                                 Class 1
                               </label>
@@ -80,7 +98,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault2"
+                                htmlFor="flexRadioDefault2"
                               >
                                 Class 2
                               </label>
@@ -95,7 +113,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault3"
+                                htmlFor="flexRadioDefault3"
                               >
                                 Class 3
                               </label>
@@ -109,7 +127,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault4"
+                                htmlFor="flexRadioDefault4"
                               >
                                 Class 4
                               </label>
@@ -123,7 +141,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault5"
+                                htmlFor="flexRadioDefault5"
                               >
                                 Class 5
                               </label>
@@ -137,7 +155,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault6"
+                                htmlFor="flexRadioDefault6"
                               >
                                 Class 6
                               </label>
@@ -151,7 +169,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault7"
+                                htmlFor="flexRadioDefault7"
                               >
                                 Class 7
                               </label>
@@ -168,7 +186,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault8"
+                                htmlFor="flexRadioDefault8"
                               >
                                 Class 8
                               </label>
@@ -182,7 +200,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault9"
+                                htmlFor="flexRadioDefault9"
                               >
                                 Class 9
                               </label>
@@ -197,7 +215,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault10"
+                                htmlFor="flexRadioDefault10"
                               >
                                 Class 10
                               </label>
@@ -211,7 +229,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault11"
+                                htmlFor="flexRadioDefault11"
                               >
                                 Class 11
                               </label>
@@ -225,7 +243,7 @@ export const Courses = () => {
                               />
                               <label
                                 className="form-check-label"
-                                for="flexRadioDefault12"
+                                htmlFor="flexRadioDefault12"
                               >
                                 Class 12
                               </label>
