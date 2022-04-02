@@ -124,3 +124,8 @@ export const ChildType=(value)=>{
   
    </div>  )
 }
+
+
+
+
+
