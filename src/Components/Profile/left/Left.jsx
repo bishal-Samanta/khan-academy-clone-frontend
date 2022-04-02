@@ -30,7 +30,7 @@ export const Left = () => {
             </Link>
           </div>
           <div>
-            <Link to={""}>
+            <Link to={"/profile"}>
               <h6>Profile</h6>
             </Link>
           </div>
