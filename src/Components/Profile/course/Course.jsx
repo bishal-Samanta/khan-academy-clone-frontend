@@ -317,7 +317,8 @@ export const Courses = () => {
                             return (
                               <div key={i}>
                                 <a href={el} target="_blank">
-                                 {" "} Video {i + 1}
+                                  {" "}
+                                  Video {i + 1}
                                 </a>{" "}
                                 <br />
                               </div>
