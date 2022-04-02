@@ -1,4 +1,4 @@
-
+import Styles from "./login.css"
 import { Button } from "../styled-componets/body"
 export const OAuth=()=>{
 

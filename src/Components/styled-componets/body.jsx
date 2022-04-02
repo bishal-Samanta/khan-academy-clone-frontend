@@ -61,6 +61,7 @@ export const Button=styled.div`
     width:${({Width})=>Width};
     display:flex;
    text-align:center;
+  
     padding:${({padding})=>padding};
     height:${({Height})=>Height};
     font-size:15px;
@@ -77,7 +78,7 @@ border:${({border})=>border};
     }
     &>p{
         margin-left:50px;
-       
+       margin-top:15px;
     }
     &>svg{
         margin-left:30px
