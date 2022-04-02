@@ -1,6 +1,6 @@
 import { Body, Button, Child, Main } from "../styled-componets/body"
 import {Link} from "react-router-dom"
-import "./login.css"
+import Styles from "./login.css"
 import { OAuth } from "./oAuth"
 import { useState } from "react"
 import axios from "axios"
