@@ -47,7 +47,7 @@ export const Main=styled.div`
     
 
 width:75%;
-height:75%;
+height:85%;
 display:flex;
  @media screen and (max-width:768px){
    display:block;
@@ -103,7 +103,19 @@ export const Ptag=styled.div`
 font-size: 15px;
 
 font-weight: 600;
-
+text-align:center;
 line-height: 22.95px;
- color: rgb(24, 101, 242);
+ color:${(color)=>color?color: "rgb(24, 101, 242)"};
+`
+
+
+export const P=styled.p`
+    font-size: 16px;
+
+
+
+line-height: 20px;
+
+color:${(color)=>color?color: ""};
+;
 `

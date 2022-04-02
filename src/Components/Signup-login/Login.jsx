@@ -2,8 +2,56 @@ import { Body, Button, Child, Main } from "../styled-componets/body"
 import {Link} from "react-router-dom"
 import "./login.css"
 import { OAuth } from "./oAuth"
+import { useState } from "react"
+import axios from "axios"
 export const Login=()=>{
+  const payload = {
+    password: "",
+    email: ""
+  }
+  const [data, setData] = useState(payload);
 
+  const handelSubmit = () =>{
+    console.log(data);
+    console.log("Test");
+    //Request
+
+    // axios.post("https://shielded-reaches-27262.herokuapp.com/signup", data)
+    //     .then((res)=>{
+    //         console.log(res.data)
+    //         localStorage.setItem("userdata" , JSON.stringify(res.data));
+    //         alert("Signup Successfully");
+    //     })
+    //     .catch((e)=>{
+    //         console.log(e.response.data.errors[0].msg);
+    //         if(e.response.data.errors[0].msg == "Email is already Registered"){
+    //             window.location.href = "/login"
+    //         }
+    //         alert(e.response.data.errors[0].msg)
+    //   })   
+
+    axios.post("https://shielded-reaches-27262.herokuapp.com/login" , data)
+    .then((res) =>{
+      console.log(res.data);
+      localStorage.setItem("userdata" , JSON.stringify(res.data));
+      localStorage.setItem("loginstatus" , true);
+      alert("Login Successfully");
+      window.location.href = "/courses"
+    })
+    .catch((err)=>{
+      console.log(err.response.data);
+      alert(err.response.data.errors[0].msg)
+    })
+
+
+
+  }
+
+  const handelChange = (e) =>{
+    const { value , name } = e.target;
+    setData({...data , [name] : value });
+    return;
+  }
 
 
     return (
@@ -33,9 +81,9 @@ export const Login=()=>{
                               <p className="end"  style={{fontSize:"13px"}}>* indicates a required field.</p>
                  <p className="end red">You closed the popup window before logging in. If that was a mistake, try logging in again.</p>
                  <p className="end"><label htmlFor="username">Email or username *</label></p>
-                 <input type="text" name="" id="username" />
+                 <input type="text" name="email" id="username" onChange={(e) => handelChange(e)} />
                  <p className="end"><label htmlFor="password">Password *</label></p>
-                 <input type="password" name="" id="password" />
+                 <input type="password" name="password" id="password" onChange={(e) => handelChange(e)} />
                  <h4 className="blue">Forgot Password</h4>
              <button  style={{
                width:"100%",
@@ -44,8 +92,9 @@ export const Login=()=>{
                textAlign:"center",
               color:"white",
               border:"none",
-              borderRadius:"5px"
-             }}>Log In</button>
+              borderRadius:"5px",
+              cursor: "pointer"
+             }} onClick={() => handelSubmit()} >Log In</button>
                  <h4 className="blue"><Link to="/signup">Create an account</Link></h4>
                  </Child>
 

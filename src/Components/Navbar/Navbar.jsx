@@ -1,33 +1,54 @@
-// const Navbar = () =>{
-//     return(<>
-//         Navbar
-//     </>)
-// }
 
-// export default Navbar;
-
-import React, { useState } from "react";
 import styles from "./navbar.css";
-
-
-
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
 
+  const [showDiv , setShowDiv] = useState(false);
+  const [login, setLogin] = useState(false);
 
-    const [showDiv , setShowDiv] = useState(false);
+  // let loginStatus = JSON.parse(localStorage.getItem("loginstatus"));
+  // if(loginStatus === true){
+  //   setLogin(true);
+  // }
+  useEffect(()=>{
+     let loginStatus = JSON.parse(localStorage.getItem("loginstatus"));
+      if(loginStatus === true){
+        setLogin(true);
+      }
+  }, [])
 
-    const handelDivVisibility = () =>{
-        if(showDiv === false){
-            document.querySelector(".dropdown").style.visibility = "visible";
-            console.log("I am clicked")
-            setShowDiv(true);
-        }
-        else if(showDiv === true){
-            document.querySelector(".dropdown").style.visibility = "hidden";
-            setShowDiv(false);
-        }
-    }  
+  const handelLogout = () =>{
+    localStorage.removeItem("userdata");
+    localStorage.removeItem("loginstatus");
+    window.location.href = "/"
+  }
+
+
+  const handelDivVisibility = () =>{
+      if(showDiv === false){
+          document.querySelector(".dropdown").style.visibility = "visible";
+          console.log("I am clicked")
+          setShowDiv(true);
+      }
+      else if(showDiv === true){
+          document.querySelector(".dropdown").style.visibility = "hidden";
+          setShowDiv(false);
+      }
+  }  
+
+  const handelClick = () =>{
+    let login = JSON.parse(localStorage.getItem("loginstatus"))
+    console.log(login);
+    if(login === null){
+      window.location.href = "/login";
+      return;
+    }
+    else{
+      window.location.href = "/courses"
+      return
+    }
+  }
 
 
   return (
@@ -39,7 +60,7 @@ const Navbar = () => {
             <div className="nav-left">
 
               <div className="nav-courses">
-                <button className="courses-btn" onClick={handelDivVisibility} >
+                <button  className="courses-btn" onClick={handelDivVisibility}>
                   <span>
                     Courses
                     <span>
@@ -56,21 +77,25 @@ const Navbar = () => {
                     </span>
                   </span>
                 </button>
+               
                 <div className="dropdown">
                   <ul className="drop-ul">
 
                     <li>
+
                       <div>
+
                         <ul>
                           <li>
-                            <a href="">
-                              <span>MATH - INDIA</span>
+                            <a href="" className="drop-a">
+                              <span className="dropspan">MATH - INDIA</span>
                             </a>
                           </li>
                         </ul>
+
                         <ul>
                         <li>
-                            <a href="">
+                             <a onClick={handelClick}>
                               <span>Class 1</span>
                             </a>
                           </li>
@@ -130,7 +155,9 @@ const Navbar = () => {
                             </a>
                           </li>
                         </ul>
+
                       </div>
+
                     </li>
 
                     <li>
@@ -525,6 +552,7 @@ const Navbar = () => {
 
                   </ul>
                 </div>
+                
               </div>
 
               <div className="nav-search">
@@ -594,8 +622,20 @@ const Navbar = () => {
                 </svg>
               </a>
             </div>
+            {login ?  <div className="nav-right">
+              <a className="donate" href="/donate">
+                Donate
+              </a>
+             
+              <a className="signup" href="/courses">
+                Courses
+              </a>
 
-            <div className="nav-right">
+              <a className="signup" onClick={handelLogout}>
+                Logout
+              </a>
+              
+            </div> :  <div className="nav-right">
               <a className="donate" href="/donate">
                 Donate
               </a>
@@ -605,7 +645,18 @@ const Navbar = () => {
               <a className="signup" href="/Signup">
                 Sign up
               </a>
-            </div>
+            </div> }
+            {/* <div className="nav-right">
+              <a className="donate" href="/donate">
+                Donate
+              </a>
+              <a className="login" href="/login">
+                Login
+              </a>
+              <a className="signup" href="/Signup">
+                Sign up
+              </a>
+            </div> */}
             
           </div>
         </nav>
