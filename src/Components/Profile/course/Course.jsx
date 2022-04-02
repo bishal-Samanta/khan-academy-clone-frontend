@@ -4,6 +4,10 @@ import { Left } from "../left/Left";
 import "./course.css";
 
 
+
+
+
+
 export const Courses = () => {
 
     const [logindata, setLoginData] = useState({});
@@ -30,7 +34,7 @@ export const Courses = () => {
         axios.get(link)
         .then((res)=>{
             console.log(res.data);
-            setContent([...setContent , res.data]);
+            setContent(res.data);
 
         })
         .catch((e)=>{
@@ -44,6 +48,7 @@ export const Courses = () => {
     const handelModal = () =>{
         document.querySelector(".btn-close").click()
         setModel(true);
+        console.log(content);
     }
 
    
@@ -313,7 +318,18 @@ export const Courses = () => {
           </div>
           <div id="content126">
             <div>
-                {model ? <>Fetch Data</> : <h4 style={{marginTop: "20px"}}>Please select your class from courses</h4>}
+                {model ? <ul>{content.map((el)=> {
+                    return(
+                        <div key={el._id}>
+                            <li>
+                                <label>{el.title}</label>
+                               {el.links.map((el , i)=>{
+                                   return(<div key={i}><a href={el} target="_blank" >Video {i+1}</a> <br/></div>)   
+                               })}
+                            </li>
+                        </div>
+                    )
+                })}</ul> : <h4 style={{marginTop: "20px"}}>Please select your class from courses</h4>}
             </div>
             <div></div>
           </div>

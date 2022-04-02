@@ -626,9 +626,15 @@ const Navbar = () => {
               <a className="donate" href="/donate">
                 Donate
               </a>
+             
+              <a className="signup" href="/courses">
+                Courses
+              </a>
+
               <a className="signup" onClick={handelLogout}>
                 Logout
               </a>
+              
             </div> :  <div className="nav-right">
               <a className="donate" href="/donate">
                 Donate
