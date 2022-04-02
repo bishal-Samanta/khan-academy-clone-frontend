@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Home.css";
+import Styles from "./home.css";
 import main from "../../Resources/main.png"
 import teachers from "../../Resources/teachers.png"
 import main4 from "../../Resources/main4.png"
@@ -28,15 +28,15 @@ const Home = () => {
             </p>
 
             <div className="btns">
-              <a href="" className="btns-a">
+              <a href="/login" className="btns-a">
                 <span className="span-a">Learners</span>
               </a>
               <div className="div-a"></div>
-              <a href="" className="btns-a">
+              <a href="/login" className="btns-a">
                 <span className="span-a">Teachers</span>
               </a>
               <div className="div-a"></div>
-              <a href="" className="btns-a">
+              <a href="/login" className="btns-a">
                 <span className="span-a">Parents</span>
               </a>
             </div>
