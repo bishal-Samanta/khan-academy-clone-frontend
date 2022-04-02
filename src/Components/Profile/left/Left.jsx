@@ -13,7 +13,9 @@ export const Left = () => {
             <p className="mystuff">MY STUFF</p>
           </div>
           <div className="coursesDiv">
-            <h6>Courses</h6>
+            <Link to={""}>
+              <h6>Courses</h6>
+            </Link>
           </div>
         </div>
 
@@ -22,13 +24,20 @@ export const Left = () => {
             <p className="mystuff">MY ACCOUNT</p>
           </div>
           <div>
-            <h6>Progess</h6>
+            <Link to={""}>
+              {" "}
+              <h6>Progess</h6>
+            </Link>
           </div>
           <div>
-            <h6>Profile</h6>
+            <Link to={""}>
+              <h6>Profile</h6>
+            </Link>
           </div>
           <div>
-            <h6>Teachers</h6>
+            <Link to={""}>
+              <h6>Teachers</h6>
+            </Link>
           </div>
         </div>
       </div>

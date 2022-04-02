@@ -130,6 +130,8 @@
 #content126 > div:nth-child(1) {
     height: 600px;
     overflow: scroll;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #content126 > div:nth-child(2) {
   background-color: whitesmoke;
