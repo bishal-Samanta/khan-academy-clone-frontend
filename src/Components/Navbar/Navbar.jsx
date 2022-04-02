@@ -1,10 +1,29 @@
 
 import styles from "./navbar.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
 
   const [showDiv , setShowDiv] = useState(false);
+  const [login, setLogin] = useState(false);
+
+  // let loginStatus = JSON.parse(localStorage.getItem("loginstatus"));
+  // if(loginStatus === true){
+  //   setLogin(true);
+  // }
+  useEffect(()=>{
+     let loginStatus = JSON.parse(localStorage.getItem("loginstatus"));
+      if(loginStatus === true){
+        setLogin(true);
+      }
+  }, [])
+
+  const handelLogout = () =>{
+    localStorage.removeItem("userdata");
+    localStorage.removeItem("loginstatus");
+    window.location.href = "/"
+  }
+
 
   const handelDivVisibility = () =>{
       if(showDiv === false){
@@ -17,6 +36,19 @@ const Navbar = () => {
           setShowDiv(false);
       }
   }  
+
+  const handelClick = () =>{
+    let login = JSON.parse(localStorage.getItem("loginstatus"))
+    console.log(login);
+    if(login === null){
+      window.location.href = "/login";
+      return;
+    }
+    else{
+      window.location.href = "/courses"
+      return
+    }
+  }
 
 
   return (
@@ -63,7 +95,7 @@ const Navbar = () => {
 
                         <ul>
                         <li>
-                             <a href="">
+                             <a onClick={handelClick}>
                               <span>Class 1</span>
                             </a>
                           </li>
@@ -590,8 +622,14 @@ const Navbar = () => {
                 </svg>
               </a>
             </div>
-
-            <div className="nav-right">
+            {login ?  <div className="nav-right">
+              <a className="donate" href="/donate">
+                Donate
+              </a>
+              <a className="signup" onClick={handelLogout}>
+                Logout
+              </a>
+            </div> :  <div className="nav-right">
               <a className="donate" href="/donate">
                 Donate
               </a>
@@ -601,7 +639,18 @@ const Navbar = () => {
               <a className="signup" href="/Signup">
                 Sign up
               </a>
-            </div>
+            </div> }
+            {/* <div className="nav-right">
+              <a className="donate" href="/donate">
+                Donate
+              </a>
+              <a className="login" href="/login">
+                Login
+              </a>
+              <a className="signup" href="/Signup">
+                Sign up
+              </a>
+            </div> */}
             
           </div>
         </nav>

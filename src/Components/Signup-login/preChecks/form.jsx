@@ -46,6 +46,7 @@ export const SignupForm=()=>{
             console.log(res.data)
             localStorage.setItem("userdata" , JSON.stringify(res.data));
             alert("Signup Successfully");
+            window.location.href = "/login"
         })
         .catch((e)=>{
             console.log(e.response.data.errors[0].msg);

@@ -34,7 +34,9 @@ export const Login=()=>{
     .then((res) =>{
       console.log(res.data);
       localStorage.setItem("userdata" , JSON.stringify(res.data));
+      localStorage.setItem("loginstatus" , true);
       alert("Login Successfully");
+      window.location.href = "/courses"
     })
     .catch((err)=>{
       console.log(err.response.data);

@@ -29,21 +29,21 @@ export const Courses = () => {
             </div>
             <div>
               <div>
-                <div class="modal fade " tabindex="-1" id="openmodel">
-                  <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title modal_heading126">
+                <div className="modal fade "  id="openmodel">
+                  <div className="modal-dialog modal-lg modal-dialog-centered">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h4 className="modal-title modal_heading126">
                           Personalize Khan Academy
                         </h4>
                         <button
                           type="button"
-                          class="btn-close"
+                          className="btn-close"
                           data-bs-dismiss="modal"
                           aria-label="Close"
                         ></button>
                       </div>
-                      <div class="modal-body">
+                      <div className="modal-body">
                         <div className="modalimg_div">
                           <img
                             id="modalimg"
@@ -57,100 +57,100 @@ export const Courses = () => {
 
                         <div className="classes">
                           <div className="classes_box1">
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault1"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault1"
                               >
                                 Class 1
                               </label>
                             </div>
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault2"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault2"
                               >
                                 Class 2
                               </label>
                             </div>
 
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault3"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault3"
                               >
                                 Class 3
                               </label>
                             </div>
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault4"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault4"
                               >
                                 Class 4
                               </label>
                             </div>
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault5"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault5"
                               >
                                 Class 5
                               </label>
                             </div>
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault6"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault6"
                               >
                                 Class 6
                               </label>
                             </div>
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault7"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault7"
                               >
                                 Class 7
@@ -159,72 +159,72 @@ export const Courses = () => {
                           </div>
 
                           <div className="classes_box1">
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault8"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault8"
                               >
                                 Class 8
                               </label>
                             </div>
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault9"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault9"
                               >
                                 Class 9
                               </label>
                             </div>
 
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault10"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault10"
                               >
                                 Class 10
                               </label>
                             </div>
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault11"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault11"
                               >
                                 Class 11
                               </label>
                             </div>
-                            <div class="form-check">
+                            <div className="form-check">
                               <input
-                                class="form-check-input"
+                                className="form-check-input"
                                 type="radio"
                                 name="flexRadioDefault"
                                 id="flexRadioDefault12"
                               />
                               <label
-                                class="form-check-label"
+                                className="form-check-label"
                                 for="flexRadioDefault12"
                               >
                                 Class 12
@@ -236,15 +236,15 @@ export const Courses = () => {
                         </div>
                         <div className="classes_box2"></div>
                       </div>
-                      <div class="modal-footer">
+                      <div className="modal-footer">
                         <button
                           type="button"
-                          class="btn btn-secondary"
+                          className="btn btn-secondary"
                           data-bs-dismiss="modal"
                         >
                           Close
                         </button>
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" className="btn btn-primary">
                           Save changes
                         </button>
                       </div>
