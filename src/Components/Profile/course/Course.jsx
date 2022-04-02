@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { Left } from "../left/Left";
 import "./course.css";
@@ -6,10 +7,15 @@ import "./course.css";
 export const Courses = () => {
 
     const [logindata, setLoginData] = useState({});
-    
+    const [content , setContent] = useState([]);
+    const [model , setModel] = useState(false);
+
     useEffect(()=>{
         getData();
+        getContent();
         console.log(logindata)
+        console.log(content);
+    
     }, [])
 
     const getData = () =>{
@@ -17,6 +23,30 @@ export const Courses = () => {
         setLoginData(data.user);
         console.log(data.user.userName)
     } 
+
+
+    const getContent = () =>{
+        const link = "https://shielded-reaches-27262.herokuapp.com/contents/classcontent/624710e7be01fd7692d36d3f"
+        axios.get(link)
+        .then((res)=>{
+            console.log(res.data);
+            setContent([...setContent , res.data]);
+
+        })
+        .catch((e)=>{
+            console.log(e.response);
+        })
+
+
+    }
+
+
+    const handelModal = () =>{
+        document.querySelector(".btn-close").click()
+        setModel(true);
+    }
+
+   
     
     
 
@@ -262,7 +292,7 @@ export const Courses = () => {
                         >
                           Close
                         </button>
-                        <button type="button" className="btn btn-primary">
+                        <button type="button" className="btn btn-primary" onClick={handelModal}>
                           Save changes
                         </button>
                       </div>
@@ -275,13 +305,16 @@ export const Courses = () => {
                 href="#openmodel"
                 role="button"
                 id="editbtn"
+
               >
-                Edit Courses{" "}
+                Courses{" "}
               </button>
             </div>
           </div>
           <div id="content126">
-            <div></div>
+            <div>
+                {model ? <>Fetch Data</> : <h4 style={{marginTop: "20px"}}>Please select your class from courses</h4>}
+            </div>
             <div></div>
           </div>
           <div>
