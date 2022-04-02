@@ -40,7 +40,7 @@ export const Login=()=>{
     })
     .catch((err)=>{
       console.log(err.response.data);
-      alert(err.response.data.errors[0].msg)
+      alert(err.response.data.message)
     })
 
 
