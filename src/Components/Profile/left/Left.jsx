@@ -13,7 +13,7 @@ export const Left = () => {
             <p className="mystuff">MY STUFF</p>
           </div>
           <div className="coursesDiv">
-            <Link to={""}>
+            <Link to={"/courses"}>
               <h6>Courses</h6>
             </Link>
           </div>
@@ -30,7 +30,7 @@ export const Left = () => {
             </Link>
           </div>
           <div>
-            <Link to={""}>
+            <Link to={"/profile"}>
               <h6>Profile</h6>
             </Link>
           </div>

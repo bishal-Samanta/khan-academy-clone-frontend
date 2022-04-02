@@ -1,0 +1,95 @@
+.right126 {
+    /* border: 1px solid black; */
+    border-left: 1px solid rgb(223, 219, 219);
+    width: 80%;
+    height: auto;
+}
+
+.MyProfile {
+    font-weight: bold;
+    font-family: Lato, "Noto Sans", sans-serif;
+    /* border: 2px solid black; */
+    color: #444444;
+    font-size: 25px;
+    padding: 10px 35px;
+    width: 95%;
+    margin: auto;
+    text-align: left;
+}
+.main126 {
+    display: flex;
+}
+.row1126 {
+    display: flex;
+    /* border: 1px solid black; */
+    margin-left: 14px;
+    width: 90%;
+}
+.box1 {
+    width: 40%;
+    border: 1px solid rgb(211, 199, 199);
+    line-height: 2px;
+    color: darkslategray;
+    padding-bottom: 5px;
+    height: fit-content;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.showcase126 {
+    border: 0.5px solid rgb(207, 193, 193);
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif, Helvetica,
+      Corbel, sans-serif;
+      border-radius: 5px;
+}
+  
+.datejoin {
+    padding-left: 10px;
+    font-weight: 500;
+    padding: 10px ;
+    text-align: left;
+    /* border: 1px solid black; */
+}
+.showCaseImg {
+    margin: auto;
+    height: 115px;
+}
+.badge126 {
+    border: 0.5px solid rgb(207, 193, 193);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    font-size: 18px;
+    /* letter-spacing: 0.5px; */
+    font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif, Helvetica,
+      Corbel, sans-serif;
+    height: fit-content;
+}
+  
+.box2 {
+    height: 200px;
+    width: 40%;
+    border: 1px solid rgb(211, 199, 199);
+    margin-left: 20px;
+    color: darkslategray;
+    line-height: 7px;
+    margin-top: 10px;
+    border-radius: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.box3 {
+    border: 1px solid rgb(211, 199, 199);
+    width: 36%;
+    margin-left: 35px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+#pro{
+    padding: 10px;
+}
