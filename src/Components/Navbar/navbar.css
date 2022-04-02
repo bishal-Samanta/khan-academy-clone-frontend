@@ -7,7 +7,8 @@
     right: 0px ;
     z-index: 1060 ;
     border-top: 1px solid #D6D8DA ;
-    border-bottom: 1px solid #D6D8DA ;
+    border-bottom: 1px solid #D6D8DA ; 
+    /* border: 2px solid black;
 }
 
 nav {
@@ -15,6 +16,7 @@ nav {
     clear: both;
     width: 100%;
     margin: 0;
+    /* border: 1px solid black; */
 }
 
 .nav{
@@ -23,6 +25,7 @@ nav {
         margin-right: auto ;
         width: 100% ;
         height: 100% ;
+        border: 1px solid transparent;
         
 }
 
@@ -35,8 +38,11 @@ nav {
         display: -webkit-flex ;
         display: flex ;
         height: 100% ;
+        width: 100%;
+        border: 2px solid transparent;
         /* -webkit-align-items: center ; */
         align-items: center ;
+
 }
 .nav-left{
         /* -webkit-box-pack: start ;
@@ -357,40 +363,40 @@ padding-right: 20px ;
 }
 
 .drop-ul > li > div > ul:nth-child(1) > li> a{
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: horizontal !important;
-    background-color: transparent !important;
-    text-decoration: none !important;
-    display: -webkit-inline-box !important;
-    display: -moz-inline-box !important;
-    display: -ms-inline-flexbox !important;
-    display: -webkit-inline-flex !important;
-    display: inline-flex !important;
-    -webkit-flex-direction: row !important;
-    -ms-flex-direction: row !important;
-    flex-direction: row !important;
-    -webkit-align-items: center !important;
-    align-items: center !important;
-    color: #0a2a66 !important;
-    height: 20px !important;
-    width: 100% !important;
-    padding-bottom: 8px !important;
-    white-space: normal !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    background-color: transparent;
+    text-decoration: none;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    color: #0a2a66;
+    height: 20px;
+    width: 100%;
+    padding-bottom: 8px;
+    white-space: normal;
 }
 
 .drop-ul > li > div > ul:nth-child(1) > li> a> span{
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-    display: block !important;
-    font-family: Lato, "Noto Sans", sans-serif !important;
-    font-weight: 700 !important;
-    font-size: 12px !important;
-    line-height: 16px !important;
-    letter-spacing: 0.6px !important;
-    text-transform: uppercase !important;
-    margin-bottom: 0px !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
+    font-family: Lato, "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
 }
 
 ul{
@@ -403,31 +409,31 @@ li{
 }
 
 .drop-ul > li > div > ul:nth-child(2) > li > span{
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-    display: block !important;
-    font-family: Lato, "Noto Sans", sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 20px !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
+    font-family: Lato, "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .drop-ul > li > div > ul:nth-child(2) > li > a{
-    background-color: transparent !important;
-    display: -webkit-inline-box !important;
-    display: -moz-inline-box !important;
-    display: -ms-inline-flexbox !important;
-    display: -webkit-inline-flex !important;
-    display: inline-flex !important;
-    color: #1865f2 !important;
-    text-decoration: none !important;
-    width: 100% !important;
-    margin-bottom: 16px !important;
-    white-space: normal !important;
+    background-color: transparent;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    color: #1865f2;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 16px;
+    white-space: normal;
 }
 
  .drop-ul > li > div > ul:nth-child(2){
-     padding-top: 16px !important;
+     padding-top: 16px;
   
 }
 

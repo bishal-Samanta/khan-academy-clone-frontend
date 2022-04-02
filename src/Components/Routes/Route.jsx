@@ -3,6 +3,7 @@ import Footer from "../Footer/Footer";
 
 import Home from "../Home/Home";
 import Navbar from "../Navbar/Navbar";
+import { Courses } from "../Profile/course/Course";
 import { Login } from "../Signup-login/Login";
 import { Signup } from "../Signup-login/Signup";
 
@@ -16,6 +17,7 @@ const AllRoutes = () =>{
                 <Route path="/" element={<Home/>} />
                 <Route path="/login" element={ < Login/> } />
                 <Route path="/signup" element={ < Signup/> } />
+                <Route path="/courses" element={ < Courses/> } />
             </Routes>  
             < Footer/>
             
